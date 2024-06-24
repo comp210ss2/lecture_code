@@ -1,7 +1,9 @@
 package comp210.L01.Static;
 
 /**
- * This class doesn't use getters and setters, which would be proper Java encapsulation practice, for explanation purposes
+ * This class doesn't use getters and setters, which would be proper Java encapsulation practice,
+ * for explanation purposes
+ *
  * <p>We'll cover getters and setters later
  */
 public class Static {
