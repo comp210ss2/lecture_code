@@ -2,36 +2,28 @@ package comp210.L01.Static;
 
 public class Static {
 
-  private static int x = 7;
-  private int y;
+  private static int s = 7;
+  private int i;
 
   // Why is x not a parameter in the constructor?
   // Why is y a parameter in the constructor?
-  Static(int y) {
-    this.y = y;
+  Static(int i) {
+    this.i = i;
   }
 
-  public static void printX() {
-    System.out.println(x);
+  public static void setS(int sParam) {
+    s = sParam;
   }
 
-  public void printY() {
-    System.out.println(this.y);
+  public void setI(int i) {
+    this.i = i;
   }
 
-  public static void setX(int xParam) {
-    x = xParam;
+  public static int getS() {
+    return s;
   }
 
-  public void setY(int y) {
-    this.y = y;
-  }
-
-  public static int getX() {
-    return x;
-  }
-
-  int getY() {
-    return this.y;
+  int getI() {
+    return this.i;
   }
 }

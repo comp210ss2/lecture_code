@@ -5,12 +5,12 @@ public class StaticRunner {
         Static s1 = new Static(1);
         Static s2 = new Static(1);
 
-        Static.setX(2);
-        s2.setY(2);
+        Static.setS(2);
+        s2.setI(2);
 
-        System.out.println(Static.getX());
+        System.out.println(Static.getS());
 
-        System.out.println(s1.getY());
-        System.out.println(s2.getY());
+        System.out.println(s1.getI());
+        System.out.println(s2.getI());
     }
 }
