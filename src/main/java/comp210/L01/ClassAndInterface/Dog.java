@@ -1,4 +1,4 @@
-package comp210.L01;
+package comp210.L01.ClassAndInterface;
 
 public class Dog implements Animal {
     private int lifespan;
