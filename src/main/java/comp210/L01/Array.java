@@ -16,6 +16,6 @@ public class Array {
       System.out.println(i);
     }
 
-    Arrays.stream(arr2).distinct().map((i) -> i * 3).forEach(System.out::println);
+    Arrays.stream(arr2).distinct().map((num) -> num * 3).forEach(System.out::println);
   }
 }
