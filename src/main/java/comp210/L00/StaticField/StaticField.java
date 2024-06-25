@@ -1,4 +1,4 @@
-package comp210.L00.Static;
+package comp210.L00.StaticField;
 
 /**
  * This class doesn't use getters and setters, which would be proper Java encapsulation practice,
@@ -6,15 +6,13 @@ package comp210.L00.Static;
  *
  * <p>We'll cover getters and setters later
  */
-public class Static {
+public class StaticField {
 
-  public static int staticVar = 7;
-  public int instanceVar;
+  public static int staticField = 0;
+  public int instanceField;
 
-  // Why is staticVar not a parameter in the constructor?
-  // Why is instanceVar a parameter in the constructor?
-  Static(int instanceVar) {
-    this.instanceVar = instanceVar;
+  public StaticField() {
+
   }
 
   /**
@@ -23,6 +21,6 @@ public class Static {
    * @return String representation of instance
    */
   public String toString() {
-    return "staticVar: " + staticVar + "; instanceVar: " + instanceVar;
+    return "staticVar: " + staticField + "; instanceVar: " + instanceField;
   }
 }

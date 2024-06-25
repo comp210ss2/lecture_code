@@ -1,13 +1,13 @@
-package comp210.L01.Static;
+package comp210.L01.StaticMethod;
 
 public class StaticRunner {
   public static void main(String[] args) {
     // Call static method without constructing an instance
-    Static.staticMethod();
+    StaticMethod.staticMethod();
 
     // Must construct instance to call an instance method on
-    Static s1 = new Static(1);
-    Static s2 = new Static(2);
+    StaticMethod s1 = new StaticMethod();
+    StaticMethod s2 = new StaticMethod();
     s1.instanceMethod();
     s2.instanceMethod();
   }
