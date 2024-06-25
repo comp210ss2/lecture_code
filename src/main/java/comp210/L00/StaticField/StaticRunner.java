@@ -18,7 +18,6 @@ public class StaticRunner {
 
     // Logically incorrect way to set static variable
     // But legal syntax and gets the point across
-
     s1.staticField = 2;
     s2.staticField = 3;
 
