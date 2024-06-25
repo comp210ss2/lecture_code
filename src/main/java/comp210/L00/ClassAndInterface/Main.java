@@ -1,4 +1,4 @@
-package comp210.L01.ClassAndInterface;
+package comp210.L00.ClassAndInterface;
 
 public class Main {
   private int exampleField;

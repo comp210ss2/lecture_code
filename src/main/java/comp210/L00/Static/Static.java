@@ -1,4 +1,4 @@
-package comp210.L01.Static;
+package comp210.L00.Static;
 
 /**
  * This class doesn't use getters and setters, which would be proper Java encapsulation practice,
