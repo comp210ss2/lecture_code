@@ -7,4 +7,4 @@ class SelfKeyword:
         return f"{self.a}, {self.b}"
 
 sk: SelfKeyword = SelfKeyword(1, 2)
-print(sk)
+print(sk) # 1, 2

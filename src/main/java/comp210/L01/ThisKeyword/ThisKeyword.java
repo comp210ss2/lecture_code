@@ -1,5 +1,6 @@
 package comp210.L01.ThisKeyword;
 
+// Java
 public class ThisKeyword {
     private int a;
     private int b;
@@ -10,7 +11,7 @@ public class ThisKeyword {
     }
 
     public String toString() {
-        return "" + a + ", " + b;
+        return "" + this.a + ", " + this.b;
     }
 
     public static void main(String[] args) {
