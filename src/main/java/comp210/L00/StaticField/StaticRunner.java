@@ -12,7 +12,9 @@ public class StaticRunner {
     s1.instanceField = 2;
     s2.instanceField = 3;
 
-    printInstances(s1, s2);
+    // Will automatically call toString(), which we defined to just print the staticField and instanceField
+    System.out.println(s1);
+    System.out.println(s2);
 
     // Logically incorrect way to set static variable
     // But legal syntax and gets the point across
@@ -20,11 +22,8 @@ public class StaticRunner {
     s1.staticField = 2;
     s2.staticField = 3;
 
-    printInstances(s1, s2);
-  }
-
-  static void printInstances(StaticField s1, StaticField s2) {
     System.out.println(s1);
     System.out.println(s2);
   }
+
 }
