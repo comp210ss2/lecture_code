@@ -1,4 +1,4 @@
-package comp210.L02.Static;
+package comp210.L01.Static;
 
 public class Static {
   public static int staticVar = 7;

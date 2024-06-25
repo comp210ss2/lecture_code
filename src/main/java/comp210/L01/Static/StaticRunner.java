@@ -1,4 +1,4 @@
-package comp210.L02.Static;
+package comp210.L01.Static;
 
 public class StaticRunner {
   public static void main(String[] args) {
