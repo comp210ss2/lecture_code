@@ -10,7 +10,7 @@ public class SumArray {
     if (pos == vals.length - 1) {
       return vals[pos];
     } else {
-      return vals[pos] + sumArrayFromPos(vals, pos+1);
+      return vals[pos] + sumArrayFromPos(vals, pos + 1);
     }
   }
 }

@@ -17,4 +17,19 @@ public class FibonacciTest {
     assertEquals(3, Fibonacci.fib(4));
     assertEquals(5, Fibonacci.fib(5));
   }
+
+  @Test
+  public void testFibonacciDPBaseCases() {
+    assertEquals(0, FibonacciDP.fib(0));
+    assertEquals(1, FibonacciDP.fib(1));
+  }
+
+  @Test
+  public void testFibonacciDP() {
+    assertEquals(1, FibonacciDP.fib(2));
+    assertEquals(2, FibonacciDP.fib(3));
+    assertEquals(3, FibonacciDP.fib(4));
+    assertEquals(5, FibonacciDP.fib(5));
+  }
+
 }
