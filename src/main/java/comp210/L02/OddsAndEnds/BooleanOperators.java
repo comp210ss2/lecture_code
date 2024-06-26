@@ -11,7 +11,8 @@ public class BooleanOperators {
     System.out.println(b);
 
     if (b && ++a > 0) {
-      System.out.println(a);
+
     }
+    System.out.println(a);
   }
 }
