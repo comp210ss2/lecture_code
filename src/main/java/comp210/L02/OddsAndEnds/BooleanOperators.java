@@ -7,7 +7,7 @@ public class BooleanOperators {
 
   private static void ex() {
     int a = 0;
-    boolean b = !(true || false);
+    boolean b = false;
     System.out.println(b);
 
     if (b && ++a > 0) {

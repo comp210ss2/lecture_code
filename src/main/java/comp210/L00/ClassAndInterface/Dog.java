@@ -1,7 +1,7 @@
 package comp210.L00.ClassAndInterface;
 
 public class Dog implements Animal {
-  private int lifespan;
+  private final int lifespan;
 
   public Dog(int lifespan) {
     this.lifespan = lifespan;

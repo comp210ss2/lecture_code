@@ -20,7 +20,7 @@ public class SumArray {
       return vals[pos] + sum_so_far;
     } else {
       // Tail recursion, result of recursive call returned directly without any additional computation
-      return sumArrayFromPosTail(vals, pos+1, vals[pos] + sum_so_far);
+      return sumArrayFromPosTail(vals, pos + 1, vals[pos] + sum_so_far);
     }
   }
 }

@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class ControlFlow {
   private static Random random;
-  private static boolean boolean_expression = random.nextBoolean();
+  private static final boolean boolean_expression = random.nextBoolean();
 
   private static void ifElseIfElse() {
     if (boolean_expression) {
