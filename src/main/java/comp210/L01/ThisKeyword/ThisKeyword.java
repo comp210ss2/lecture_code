@@ -16,6 +16,6 @@ public class ThisKeyword {
 
   public static void main(String[] args) {
     ThisKeyword tk = new ThisKeyword(1, 2);
-    System.out.println(tk);  // 1, 2
+    System.out.println(tk); // 1, 2
   }
 }

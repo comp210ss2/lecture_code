@@ -10,9 +10,8 @@ public class BooleanOperators {
     boolean b = false;
     System.out.println(b);
 
-    if (b && ++a > 0) {
+    if (b && ++a > 0) {}
 
-    }
     System.out.println(a);
   }
 }

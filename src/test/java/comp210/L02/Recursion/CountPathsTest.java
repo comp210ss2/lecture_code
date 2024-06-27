@@ -1,9 +1,9 @@
 package comp210.L02.Recursion;
 
+import static org.junit.Assert.assertEquals;
+
 import org.apache.commons.math3.util.CombinatoricsUtils;
 import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
 
 public class CountPathsTest {
   private static final int maxMN = 10;

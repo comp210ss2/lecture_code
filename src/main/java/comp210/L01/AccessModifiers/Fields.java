@@ -7,7 +7,8 @@ public class Fields {
   // Only accessible in this class (Fields)
   private int priv;
 
-  // Accessible in this class, different class in same package, or subclass (we'll look at this later)
+  // Accessible in this class, different class in same package, or subclass (we'll look at this
+  // later)
   protected int prot;
 
   // Accessible in any class in same package

@@ -11,7 +11,7 @@ public class Array {
       System.out.println(arr[i]);
     }
 
-    int[] arr2 = new int[]{2, 4, 4};
+    int[] arr2 = new int[] {2, 4, 4};
     for (int i : arr2) {
       System.out.println(i);
     }

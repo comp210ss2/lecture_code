@@ -11,9 +11,7 @@ public class StaticField {
   public static int staticField = 0;
   public int instanceField;
 
-  public StaticField() {
-
-  }
+  public StaticField() {}
 
   /**
    * toString() is automatically called when we call System.out.println on an instance of this class
