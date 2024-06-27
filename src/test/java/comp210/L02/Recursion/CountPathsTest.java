@@ -1,9 +1,9 @@
 package comp210.L02.Recursion;
 
+import static org.junit.Assert.assertEquals;
+
 import org.apache.commons.math3.util.CombinatoricsUtils;
 import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
 
 public class CountPathsTest {
   private static final int maxMN = 10;
@@ -23,12 +23,14 @@ public class CountPathsTest {
   public void testCountPaths() {
     for (int m = 1; m <= maxMN; m++) {
       for (int n = 1; n <= maxMN; n++) {
-        // in m x n grid (as defined in class), we need m + n - 2 steps to get from top-right (m-1, n-1) to bottom-left (0, 0), only moving left or down
-        // we are forced to take m-1 left steps. from m + n - 2 steps, choose m-1 of them to be left steps
+        // in m x n grid (as defined in class), we need m + n - 2 steps to get from top-right (m-1,
+        // n-1) to bottom-left (0, 0), only moving left or down
+        // we are forced to take m-1 left steps. from m + n - 2 steps, choose m-1 of them to be left
+        // steps
         // this fixes the number of down steps, so alternatively k can be n-1
-        assertEquals(CombinatoricsUtils.binomialCoefficient(m + n - 2, m - 1), CountPaths.countPaths(m, n));
+        assertEquals(
+            CombinatoricsUtils.binomialCoefficient(m + n - 2, m - 1), CountPaths.countPaths(m, n));
       }
     }
   }
-
 }

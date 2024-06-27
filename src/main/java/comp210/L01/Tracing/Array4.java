@@ -2,7 +2,7 @@ package comp210.L01.Tracing;
 
 public class Array4 {
   public static void main(String[] args) {
-    int[] a = new int[]{3, 5, 10};
+    int[] a = new int[] {3, 5, 10};
     int[] b = a;
 
     int c = swapAndSum(a, 0, 1);

@@ -12,7 +12,8 @@ public class StaticRunner {
     s1.instanceField = 2;
     s2.instanceField = 3;
 
-    // Will automatically call toString(), which we defined to just print the staticField and instanceField
+    // Will automatically call toString(), which we defined to just print the staticField and
+    // instanceField
     System.out.println(s1);
     System.out.println(s2);
 
@@ -24,5 +25,4 @@ public class StaticRunner {
     System.out.println(s1);
     System.out.println(s2);
   }
-
 }

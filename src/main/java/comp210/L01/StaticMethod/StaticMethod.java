@@ -4,9 +4,7 @@ public class StaticMethod {
   public static int staticField = 7;
   public int instanceField;
 
-  public StaticMethod() {
-
-  }
+  public StaticMethod() {}
 
   public static void staticMethod() {
     staticField = 8;

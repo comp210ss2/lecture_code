@@ -1,8 +1,8 @@
 package comp210.L02.Recursion;
 
-import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
 
 public class FibonacciTest {
   @Test
@@ -32,5 +32,4 @@ public class FibonacciTest {
     assertEquals(3, FibonacciDP.fib(4));
     assertEquals(5, FibonacciDP.fib(5));
   }
-
 }

@@ -58,5 +58,4 @@ public class Sighting {
   public void setLongitude(double longitude) {
     this.longitude = longitude;
   }
-
 }
