@@ -24,6 +24,7 @@ jobs:
         with:
           java-version: '21'
           distribution: 'oracle'
+          cache: maven
 
       - name: Test
         run: mvn --batch-mode --update-snapshots verify
