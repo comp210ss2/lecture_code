@@ -1,7 +1,9 @@
 package comp210.L00.ClassAndInterface;
 
 public interface Animal {
-  /** Prints animal sound */
+  /**
+   * Prints animal sound
+   */
   void makeSound();
 
   /**

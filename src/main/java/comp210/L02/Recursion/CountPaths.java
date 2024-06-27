@@ -8,6 +8,6 @@ public class CountPaths {
    */
   public static int countPaths(int m, int n) {
     // TODO
-    return 1;
+    return 0;
   }
 }
