@@ -32,5 +32,4 @@ public class FibonacciTest {
     assertEquals(3, FibonacciDP.fib(4));
     assertEquals(5, FibonacciDP.fib(5));
   }
-
 }
