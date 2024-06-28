@@ -5,12 +5,6 @@ public class Triangle {
   private Point b;
   private Point c;
 
-  public Triangle(double ax, double ay, double bx, double by, double cx, double cy) {
-    this.a = new CartesianPoint(ax, ay);
-    this.b = new CartesianPoint(bx, by);
-    this.c = new CartesianPoint(cx, cy);
-  }
-
   // Now accepts general Point instead of just CartesianPoint
   public Triangle(Point a, Point b, Point c) {
     this.a = a;

@@ -2,9 +2,6 @@ package comp210.L04.PerimeterWithInterface;
 
 public class TriangleMain {
   public static void main(String[] args) {
-    Triangle t = new Triangle(0.0, 0.0, 4.0, 0.0, 0.0, 4.0);
-    System.out.println("Perimeter: " + t.computePerimeter());
-
     Point[] cartesianPoints =
         new Point[] {new CartesianPoint(0, 0), new CartesianPoint(4, 0), new CartesianPoint(0, 4)};
     Point[] polarPoints =
