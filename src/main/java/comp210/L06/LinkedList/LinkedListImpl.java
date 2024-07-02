@@ -6,8 +6,20 @@ public class LinkedListImpl<T> implements LinkedList<T> {
   private int size = 0;
 
   public boolean isEqual(LinkedList other) {
-    // TODO
-    return false;
+    if (size() != other.size()) {
+      return false;
+    }
+    Node<T> head1 = head;
+    Node<T> head2 = other.getHead();
+
+    while (head1 != null && head2 != null) {
+      if (head1.getValue() != head2.getValue()) {
+        return false;
+      }
+      head1 = head1.getNext();
+      head2 = head2.getNext();
+    }
+    return true;
   }
 
   /* Implementation given to you. Do not modify below this. */
