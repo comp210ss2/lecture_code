@@ -13,7 +13,7 @@ public class Sort {
     for (int i = 1; i < n; i++) {
       int key = arr[i];
 
-      // insert A[i] into the sorted subarray A[1:i-1]
+      // insert A[i] into the sorted subarray A[0:i-1]
       int j = i - 1;
       while (j >= 0 && arr[j] > key) {
         arr[j + 1] = arr[j];

@@ -20,4 +20,3 @@ public class Main {
     System.out.println("l1 and l3 are " + (l1.isEqual(l3) ? "equal" : "not equal"));
   }
 }
-
