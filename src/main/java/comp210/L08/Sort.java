@@ -1,6 +1,22 @@
 package comp210.L08;
 
 public class Sort {
+
+  public static void bubbleSort(int[] arr) {
+    int n = arr.length;
+    // loop to access each array element
+    for (int i = 0; i < n - 1; i++)
+      // loop to compare array elements
+      for (int j = 0; j < n - i - 1; j++)
+        // compare two adjacent elements
+        if (arr[j] > arr[j + 1]) {
+          // if elements are not in ascending order, swap
+          int temp = arr[j];
+          arr[j] = arr[j + 1];
+          arr[j + 1] = temp;
+        }
+  }
+
   /**
    * Insertion sort arr
    *
@@ -61,7 +77,7 @@ public class Sort {
     int[] right = new int[rightLen];
 
     // copy A[p:q] into left
-    System.arraycopy(A, p + 0, left, 0, leftLen);
+    System.arraycopy(A, p, left, 0, leftLen);
     // copy A[q+1:r] into right
     for (int i = 0; i < rightLen; i++) {
       right[i] = A[q + i + 1];
