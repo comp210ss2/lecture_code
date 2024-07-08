@@ -1,6 +1,14 @@
 package comp210.L08;
 
+import java.util.logging.*;
+
 public class Sort {
+  private static final Logger logger = Logger.getLogger(Sort.class.getName());
+
+  public static void main(String[] args) {
+    int[] arr = new int[] {12, 3, 7, 9, 14, 6, 11, 2};
+    mergeSort(arr, 0, arr.length - 1);
+  }
 
   public static void bubbleSort(int[] arr) {
     int n = arr.length;
@@ -54,8 +62,12 @@ public class Sort {
       return;
     }
     int q = (p + r) / 2;
+
+    logger.info(String.format("ms(A, %d, %d)", p, q));
     mergeSort(A, p, q);
+    logger.info(String.format("ms(A, %d, %d)", q + 1, r));
     mergeSort(A, q + 1, r);
+    logger.info(String.format("merge(A, %d, %d, %d)", p, q, r));
     merge(A, p, q, r);
   }
 
