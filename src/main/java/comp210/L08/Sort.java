@@ -63,11 +63,11 @@ public class Sort {
     }
     int q = (p + r) / 2;
 
-    logger.info(String.format("ms(A, %d, %d)", p, q));
+    System.out.println(String.format("mS(A, %d, %d)", p, q));
     mergeSort(A, p, q);
-    logger.info(String.format("ms(A, %d, %d)", q + 1, r));
+    System.out.println(String.format("mS(A, %d, %d)", q + 1, r));
     mergeSort(A, q + 1, r);
-    logger.info(String.format("merge(A, %d, %d, %d)", p, q, r));
+    System.out.println(String.format("merge(A, %d, %d, %d)", p, q, r));
     merge(A, p, q, r);
   }
 
