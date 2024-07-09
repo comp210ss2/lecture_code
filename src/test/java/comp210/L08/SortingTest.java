@@ -2,7 +2,6 @@ package comp210.L08;
 import static comp210.L08.Sort.*;
 import static org.junit.Assert.*;
 
-import comp210.L08.Sort.*;
 import java.util.Arrays;
 import java.util.Random;
 import org.junit.Test;
@@ -63,7 +62,7 @@ public class SortingTest {
     }
   }
 
-  private static int[] genRandArray() {
+  public static int[] genRandArray() {
     int[] arr = new int[random.nextInt(maxArraySize - minArraySize + 1) + minArraySize];
     for (int i = 0; i < arr.length; i++) {
       arr[i] = random.nextInt(maxValue - minValue + 1) + minValue;
