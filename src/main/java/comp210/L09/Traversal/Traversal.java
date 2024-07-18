@@ -34,11 +34,8 @@ public class Traversal {
 
   private static void inOrder(Node<String> root) {
     if (!(root == null)) {
-      // for arity 3, we arbitrarily decide to process L, then value, then M and R
-      // could also be L, M, value, then R
       inOrder(root.getLeft());
       System.out.print(root.getValue() + " ");
-      inOrder(root.getMiddle());
       inOrder(root.getRight());
     }
   }
