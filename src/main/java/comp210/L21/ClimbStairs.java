@@ -1,5 +1,7 @@
 package comp210.L21;
 
+// In dynamic programming, you solve each subproblem only once and store the results
+// This avoids redundant computations, leading to more efficient solutions
 // https://neetcode.io/problems/climbing-stairs
 // Can paste code there to run test cases
 public class ClimbStairs {
@@ -7,8 +9,7 @@ public class ClimbStairs {
     // Test here, if needed
   }
 
-  // Note: should be static, but deciding to match Neetcode's method signature
-  public int climbStairsNaive(int n) {
+  public static int climbStairsNaive(int n) {
     if (n <= 1) {
       return 1;
     }
@@ -21,7 +22,7 @@ public class ClimbStairs {
    * @param n
    * @return
    */
-  public int climbStairsDP(int n) {
+  public static int climbStairsDP(int n) {
     if (n <= 1) {
       return 1;
     }
@@ -40,10 +41,7 @@ public class ClimbStairs {
    * @param n
    * @return
    */
-  public int climbStairsDPConstantSpace(int n) {
-    if (n <= 1) {
-      return 1;
-    }
+  public static int climbStairsDPConstantSpace(int n) {
     int memoPrev = 1;
     int memoCurr = 1;
     for (int i = 2; i <= n; i++) {
